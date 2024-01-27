@@ -90,6 +90,7 @@ const contrastButton = document.querySelectorAll(`.js-contrast`);
 
 contrastButton.forEach((button) => {
     button.addEventListener(`click`, () => {
+        button.classList.toggle(`active`);
         document.documentElement.classList.toggle(`accessibility-contrast`);
     });
 })

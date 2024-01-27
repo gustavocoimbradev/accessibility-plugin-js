@@ -56,8 +56,8 @@
 .accessibility-contrast input[type=button],
 .accessibility-contrast input[type=reset],
 .accessibility-contrast input[type=submit] {
-  background: black !important;
-  color: white !important;
+  background: white !important;
+  color: black !important;
   border: none !important;
 }
 .accessibility-contrast .lang {
