@@ -47,7 +47,7 @@ body {
   transition: all 0.3s;
 }
 .accessibility button:hover {
-  background: lighten(#7b0dad, 10%);
+  background: #9d11dc;
 }
 
 .mb-1 {
