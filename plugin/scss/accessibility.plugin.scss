@@ -1,7 +1,7 @@
 .accessibility-contrast {
 
     body {
-      background: black !important;
+      background: black;
     }
 
     nav,
@@ -16,8 +16,8 @@
     main,
     aside,
     article {
-      background: black !important;
-      color: white !important;
+      background: black;
+      color: white;
     }
   
     h1,
@@ -37,7 +37,7 @@
     u,
     span,
     time {
-      color: white !important;
+      color: white;
     }
   
     input[type=text],
@@ -53,49 +53,28 @@
     input[type=datetime-local],
     textarea,
     input[type=number] {
-      background: black !important;
-      border: 1px solid white !important;
-      color: white !important;
+      background: black;
+      border: 1px solid white;
+      color: white;
     }
   
     a {
-      color: white !important;
+      color: white;
     }
   
     button,
     input[type=button],
     input[type=reset],
     input[type=submit] {
-      background: white !important;
-      color: black !important;
-      border: none !important;
-    }
-  
-    .lang {
-      border: 1px solid white !important;
-    }
-  
-    .sidebar {
-      h2 {
-        background-color: black !important;
-      }
+      background: white;
+      color: black;
+      border: none;
     }
   
     img {
       filter: grayscale(100%) contrast(120%);
     }
   
-    .header {
-      svg {
-        filter: brightness(0) invert(1);
-      }
-      * {
-        border-color: #fff;
-        &::before {
-          filter: brightness(0) invert(1);
-        }
-      }
-    }
   
    
   }

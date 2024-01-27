@@ -1,5 +1,5 @@
 .accessibility-contrast body {
-  background: black !important;
+  background: black;
 }
 .accessibility-contrast nav,
 .accessibility-contrast div,
@@ -13,8 +13,8 @@
 .accessibility-contrast main,
 .accessibility-contrast aside,
 .accessibility-contrast article {
-  background: black !important;
-  color: white !important;
+  background: black;
+  color: white;
 }
 .accessibility-contrast h1,
 .accessibility-contrast h2,
@@ -33,7 +33,7 @@
 .accessibility-contrast u,
 .accessibility-contrast span,
 .accessibility-contrast time {
-  color: white !important;
+  color: white;
 }
 .accessibility-contrast input[type=text],
 .accessibility-contrast input[type=password],
@@ -48,38 +48,23 @@
 .accessibility-contrast input[type=datetime-local],
 .accessibility-contrast textarea,
 .accessibility-contrast input[type=number] {
-  background: black !important;
-  border: 1px solid white !important;
-  color: white !important;
+  background: black;
+  border: 1px solid white;
+  color: white;
 }
 .accessibility-contrast a {
-  color: white !important;
+  color: white;
 }
 .accessibility-contrast button,
 .accessibility-contrast input[type=button],
 .accessibility-contrast input[type=reset],
 .accessibility-contrast input[type=submit] {
-  background: white !important;
-  color: black !important;
-  border: none !important;
-}
-.accessibility-contrast .lang {
-  border: 1px solid white !important;
-}
-.accessibility-contrast .sidebar h2 {
-  background-color: black !important;
+  background: white;
+  color: black;
+  border: none;
 }
 .accessibility-contrast img {
   filter: grayscale(100%) contrast(120%);
-}
-.accessibility-contrast .header svg {
-  filter: brightness(0) invert(1);
-}
-.accessibility-contrast .header * {
-  border-color: #fff;
-}
-.accessibility-contrast .header *::before {
-  filter: brightness(0) invert(1);
 }
 
 /*# sourceMappingURL=accessibility.plugin.css.map */
