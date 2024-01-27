@@ -31,10 +31,65 @@
  * OTHER DEALINGS IN THE SOFTWARE.
 */
 
-const increaseText = document.querySelectorAll(`.js-accessibility-increase`);
+const accessibilityBox = document.querySelectorAll(`.js-accessibility`);
 
-increaseText.forEach((element) => {
-    element.addEventListener(`click`, () => {
-        alert(`clicked`);
+const increaseButton = document.querySelectorAll(`.js-increase`);
+
+increaseButton.forEach((button) => {
+    button.addEventListener(`click`, () => {
+        const allTexts = document.querySelectorAll(`body *`);
+        const increasePercentage = 10;
+        const maximum = 5;
+
+        let position = parseInt(accessibilityBox[0].getAttribute(`fs-position`)) || 0;
+    
+        if (position <= maximum) {
+            allTexts.forEach((text) => {
+                const currentSize = window.getComputedStyle(text).fontSize;
+                const currentValue = parseFloat(currentSize);
+                const newSize = currentValue * (1 + increasePercentage / 100);
+                text.style.fontSize = newSize + `px`; 
+            });
+            position++;
+        }
+        
+        accessibilityBox.forEach(element => {
+            element.setAttribute('fs-position', position);
+        });
+
     })
+})
+
+const decreaseButton = document.querySelectorAll(`.js-decrease`);
+
+decreaseButton.forEach((button) => {
+    button.addEventListener(`click`, () => {
+        const allTexts = document.querySelectorAll(`body *`);
+        const decreasePercentage = 10;
+        const minimum = -2;
+        let position = parseInt(accessibilityBox[0].getAttribute(`fs-position`)) || 0;
+
+        if (position >= minimum) {
+            allTexts.forEach((text) => {
+                const currentSize = window.getComputedStyle(text).fontSize;
+                const currentValue = parseFloat(currentSize);
+                const newSize = currentValue * (1 - decreasePercentage / 100);
+                text.style.fontSize = newSize + `px`; 
+            });
+            position--;
+        }
+
+        accessibilityBox.forEach(element => {
+            element.setAttribute('fs-position', position);
+        });
+
+    })
+})
+
+const contrastButton = document.querySelectorAll(`.js-contrast`);
+
+contrastButton.forEach((button) => {
+    button.addEventListener(`click`, () => {
+        document.documentElement.classList.toggle(`accessibility-contrast`);
+    });
 })

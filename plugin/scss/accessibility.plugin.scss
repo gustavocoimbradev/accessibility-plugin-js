@@ -1,0 +1,97 @@
+.accessibility-contrast {
+    nav,
+    div,
+    ul,
+    li,
+    ol,
+    figcaption,
+    header,
+    footer,
+    section,
+    main,
+    aside,
+    article {
+      background: black !important;
+      color: white !important;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    label,
+    strong,
+    em,
+    cite,
+    q,
+    i,
+    b,
+    u,
+    span,
+    time {
+      color: white !important;
+    }
+  
+    input[type=text],
+    input[type=password],
+    input[type=url],
+    input[type=search],
+    input[type=email],
+    input[type=tel],
+    input[type=date],
+    input[type=month],
+    input[type=week],
+    input[type=datetime],
+    input[type=datetime-local],
+    textarea,
+    input[type=number] {
+      background: black !important;
+      border: 1px solid white !important;
+      color: white !important;
+    }
+  
+    a {
+      color: white !important;
+    }
+  
+    button,
+    input[type=button],
+    input[type=reset],
+    input[type=submit] {
+      background: black !important;
+      color: white !important;
+      border: none !important;
+    }
+  
+    .lang {
+      border: 1px solid white !important;
+    }
+  
+    .sidebar {
+      h2 {
+        background-color: black !important;
+      }
+    }
+  
+    img {
+      filter: grayscale(100%) contrast(120%);
+    }
+  
+    .header {
+      svg {
+        filter: brightness(0) invert(1);
+      }
+      * {
+        border-color: #fff;
+        &::before {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  
+   
+  }
+  
