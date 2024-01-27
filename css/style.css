@@ -30,7 +30,12 @@ body {
   font-weight: 400;
 }
 
-button {
+.accessibility {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.accessibility button {
   background: #7b0dad;
   padding: 10px;
   color: white;
