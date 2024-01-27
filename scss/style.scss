@@ -25,9 +25,19 @@ body {
     }
 }
 
+
 .destaque {
     color: #7b0dad;
     font-weight: 400;
+}
+
+button {
+    background: #7b0dad;
+    padding: 10px;
+    color: white;
+    -webkit-box-shadow: 0px 0px 15px -52px rgba(115,115,115,0.31);
+    -moz-box-shadow: 0px 0px 15px -52px rgba(115,115,115,0.31);
+    box-shadow: 0px 0px 15px -52px rgba(115,115,115,0.31);
 }
 
 
