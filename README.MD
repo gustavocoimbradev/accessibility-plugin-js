@@ -12,5 +12,5 @@ https://gustavocoimbradev.github.io/docs/plugins/accessibility/
   * Decrease text
   * Contrast
 
-## Want to buy me a coffee? :heart_eyes:
+## Want to buy me a coffee? :coffee:
 https://www.buymeacoffee.com/gustavocoimbradev
