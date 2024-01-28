@@ -32,7 +32,7 @@
 */
 
 .accessibility-contrast body {
-    background: black;
+    background: black!important;
   }
   .accessibility-contrast nav,
   .accessibility-contrast div,
@@ -47,8 +47,8 @@
   .accessibility-contrast aside,
   .accessibility-contrast code,
   .accessibility-contrast article {
-    background: black;
-    color: white;
+    background: black!important;
+    color: white!important;
   }
   .accessibility-contrast h1,
   .accessibility-contrast h2,
@@ -67,7 +67,7 @@
   .accessibility-contrast u,
   .accessibility-contrast span,
   .accessibility-contrast time {
-    color: white;
+    color: white!important;
   }
   .accessibility-contrast input[type=text],
   .accessibility-contrast input[type=password],
@@ -82,23 +82,23 @@
   .accessibility-contrast input[type=datetime-local],
   .accessibility-contrast textarea,
   .accessibility-contrast input[type=number] {
-    background: black;
-    border: 1px solid white;
-    color: white;
+    background: black!important;
+    border: 1px solid white!important;
+    color: white!important;
   }
   .accessibility-contrast a {
-    color: white;
+    color: white!important;
   }
   .accessibility-contrast button,
   .accessibility-contrast input[type=button],
   .accessibility-contrast input[type=reset],
   .accessibility-contrast input[type=submit] {
-    background: white;
-    color: black;
-    border: none;
+    background: white!important;
+    color: black!important;
+    border: none!important;
   }
   .accessibility-contrast img {
-    filter: grayscale(100%) contrast(120%);
+    filter: grayscale(100%) contrast(120%)!important;
   }
   
   /*# sourceMappingURL=accessibility.plugin.css.map */
