@@ -34,6 +34,10 @@
 .accessibility-contrast body {
     background: black!important;
   }
+
+  .accessibility-contrast * {
+    border-color: white !important;
+  }
   .accessibility-contrast nav,
   .accessibility-contrast div,
   .accessibility-contrast ul,
