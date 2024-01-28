@@ -1,6 +1,6 @@
 /**
  * accessibility.plugin.js
- * @version: v1.0.0
+ * @version: v1.0.1
  * @author: Gustavo Coimbra
  *
  * Created by Gustavo Coimbra on 2024-01-26. Please report any bug at https://github.com/gustavocoimbradev/accessibility-plugin-js
